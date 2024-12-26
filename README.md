@@ -51,7 +51,8 @@ Once the virtual environment is created and the paths are set, you can run the t
 ├── enercoode                           # Folder for project code and notebooks
 │   ├── src                             # Folder for python scripts
 |   |   ├── model.py                    # Module containing the functions to build the model
-|   |   └── ...
+|   |   ├── constants.py                # Module containing the names of the project variables
+|   |   └── path.py                     # Module containing the project's paths (solver, data ...)
 │   ├── Example.ipynb                   # Illustrative notebook
 │   └── test.py                         # script testing data folders.
 ├── .gitignore                          # File indicating which files/folder git must ignore (do not change/remove)
