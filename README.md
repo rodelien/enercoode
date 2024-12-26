@@ -53,7 +53,7 @@ Once the virtual environment is created and the paths are set, you can run the t
 |   |   ├── model.py                    # Module containing the functions to build the model
 |   |   └── ...
 │   ├── Example.ipynb                   # Illustrative notebook
-│   └── main.py                         # script testing data folders.
+│   └── test.py                         # script testing data folders.
 ├── .gitignore                          # File indicating which files/folder git must ignore (do not change/remove)
 ├── README.md                           # This file
 └── requirements.txt                    # List the python libraries and versions to run the scripts.
