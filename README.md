@@ -1,10 +1,4 @@
-# Enercoode
-
-<br/>
-
-<details><summary> <b> Project Overview </b> </summary>
-<p>
-
+# Enercoodes
 
 
 </p>
@@ -17,29 +11,34 @@
 
 To copy this project, you need to clone the git repository on your computer.
 
-The python requirements are written in `./requirements.txt`
+**1. Set the virtual environment**
 
-**Locally**
+The python requirements are written in `./requirements.txt`
 
 To create the virtual environment, follow the steps below:
 
-**0.** Start by checking that you are not currently in a virtual environment, to do so, you can run the command below:
-```bash
-PS C:\Users\...\enercoode> py -m pip -V
-pip *.*.* from C:\Users\...\AppData\Local\Programs\Python\Python3*\lib\site-packages\pip (python 3.*)
-```
-which should indicate the python distribution installed locally (to exit from a venv, just run the command `deactivate`)
-
-**1.** Create the environment and activate it with the following commands:
+Create the environment and activate it with the following commands:
 ```bash
 PS C:\Users\...\enercoode> py -m venv .venv
 PS C:\Users\...\enercoode> & .\.venv\Scripts\Activate.ps1
 ```
 
-**2.** You can then install the required versions of the libraries by running
+You can then install the required versions of the libraries by running
 ```bash
 (.venv) PS C:\Users\...\enercoode> py -m pip install -r requirements.txt
 ```
+
+
+**2. Set the solver path**
+
+This program uses a non linear solver named ipopt (installation doc [here](https://coin-or.github.io/Ipopt/INSTALL.html))
+
+Once installed, you need to set the value of `IPOPT_PATH` in `src/path.py` to point to the executable `ipopt.exe`
+
+**3. Run the test**
+
+Once the virtual environment is created and the paths are set, you can run the test script `test.py` or the illustrative notebook `Example.ipynb` 
+
 </p>
 </details>
 
@@ -51,8 +50,9 @@ PS C:\Users\...\enercoode> & .\.venv\Scripts\Activate.ps1
 .
 ├── enercoode                           # Folder for project code and notebooks
 │   ├── src                             # Folder for python scripts
-|   |   ├── path.py                     # Module containing project path variables
+|   |   ├── model.py                    # Module containing the functions to build the model
 |   |   └── ...
+│   ├── Example.ipynb                   # Illustrative notebook
 │   └── main.py                         # script testing data folders.
 ├── .gitignore                          # File indicating which files/folder git must ignore (do not change/remove)
 ├── README.md                           # This file

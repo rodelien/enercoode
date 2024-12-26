@@ -14,3 +14,6 @@ LVB = "B"
 LVC = "C"
 LVD = "D"
 LEVELS = [LVA, LVB, LVC, LVD]
+
+# Model labels
+STEP = "Step"
