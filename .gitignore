@@ -129,11 +129,9 @@ cython_debug/
 *.csv
 *.xlsx
 *.parquet
-!test_data.xlsx
 
 # VSCode
 .vscode/
 
 # Notebooks
 *.ipynb
-!Example.ipynb
